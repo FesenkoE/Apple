@@ -1,0 +1,714 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*body {
+	overflow: hidden;
+}*/
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "CocaColaRegular";
+  src: url("../fonts/CocaColaRegular/CocaColaRegular.eot");
+  src: url("../fonts/CocaColaRegular/CocaColaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/CocaColaRegular/CocaColaRegular.woff") format("woff"), url("../fonts/CocaColaRegular/CocaColaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "TimesNewRomanRegular";
+  src: url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.eot");
+  src: url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.woff") format("woff"), url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 49, ../sass/screen.scss */
+.wrap {
+  max-width: 1170px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+/**********HEADER**********/
+/* line 56, ../sass/screen.scss */
+header {
+  background-image: url("../img/bg.jpg");
+  height: 720px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 64, ../sass/screen.scss */
+.head {
+  background-image: url(../img/bg-top.png);
+  background-repeat: repeat-x;
+}
+
+/* line 69, ../sass/screen.scss */
+.top_header {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  align-content: stretch;
+  align-items: center;
+  height: 73px;
+  justify-content: space-between;
+}
+/* line 78, ../sass/screen.scss */
+.top_header h1 {
+  color: #fff;
+  font-family: "TimesNewRomanRegular";
+  font-size: 24px;
+}
+/* line 82, ../sass/screen.scss */
+.top_header h1 a {
+  font-family: "TimesNewRomanRegular";
+  color: #fff;
+  display: block;
+}
+/* line 90, ../sass/screen.scss */
+.top_header .menu a {
+  color: #fff;
+  display: block;
+  transition: all 0.2s;
+  padding: 7px 18px;
+}
+/* line 96, ../sass/screen.scss */
+.top_header .menu a:hover {
+  text-decoration: none;
+  color: #000;
+}
+/* line 100, ../sass/screen.scss */
+.top_header .menu a.active_1 {
+  background: #323232;
+  padding: 7px 18px;
+}
+
+/* line 106, ../sass/screen.scss */
+.top_menu .drop_menu {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+}
+/* line 111, ../sass/screen.scss */
+.top_menu .drop_menu .drop_menu_1 {
+  background: #323232;
+  display: none;
+  position: absolute;
+  width: 30px;
+  right: 102px;
+}
+/* line 118, ../sass/screen.scss */
+.top_menu .drop_menu .drop_menu_1 li {
+  background: #323232;
+  width: 120px;
+}
+/* line 121, ../sass/screen.scss */
+.top_menu .drop_menu .drop_menu_1 li a {
+  display: block;
+  padding: 5px 15px;
+}
+/* line 130, ../sass/screen.scss */
+.top_menu ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 133, ../sass/screen.scss */
+.top_menu ul li {
+  display: inline-block;
+}
+/* line 135, ../sass/screen.scss */
+.top_menu ul li a {
+  display: inline-block;
+  margin: 0px 0px;
+  color: #fff;
+}
+
+/* line 144, ../sass/screen.scss */
+.nice_meet {
+  height: 647px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 150, ../sass/screen.scss */
+.nice_meet .present {
+  padding-left: 11%;
+  text-align: center;
+}
+/* line 153, ../sass/screen.scss */
+.nice_meet .present h1 {
+  font-family: "CocaColaRegular";
+  font-size: 5em;
+  letter-spacing: 2px;
+  margin-top: -150px;
+  color: #323232;
+}
+/* line 160, ../sass/screen.scss */
+.nice_meet .present p {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #323232;
+}
+/* line 166, ../sass/screen.scss */
+.nice_meet .touch {
+  margin-top: 20px;
+  margin-left: 11%;
+}
+/* line 169, ../sass/screen.scss */
+.nice_meet .touch .btn-warning {
+  background-color: #FFC20E;
+  color: #000;
+  border: none;
+  transition: all 0.5s;
+  padding: 8px 33px;
+  border-radius: 0px;
+  font-size: 20px;
+  color: #323232;
+}
+/* line 182, ../sass/screen.scss */
+.nice_meet .touch:hover .btn-warning {
+  background-color: inherit;
+  border: none;
+  box-shadow: inset 0px 0px 10px 0px  #000;
+  color: #FFC20E;
+}
+
+/**********HEADER**********/
+/**********ABOUT US**********/
+/* line 192, ../sass/screen.scss */
+.about_us {
+  min-height: 480px;
+}
+/* line 194, ../sass/screen.scss */
+.about_us .wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+/* line 198, ../sass/screen.scss */
+.about_us .wrap .about h1 {
+  font-family: "MyriadProRegular";
+  font-size: 2.5em;
+  line-height: 96px;
+  text-align: center;
+  color: #323232;
+}
+/* line 205, ../sass/screen.scss */
+.about_us .wrap .about p {
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 25px;
+  margin: 0px 15%;
+  color: #6B6B6B;
+}
+/* line 212, ../sass/screen.scss */
+.about_us .wrap .progress_1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 215, ../sass/screen.scss */
+.about_us .wrap .progress_1 .what_can {
+  flex: 1;
+  min-width: 320px;
+}
+/* line 219, ../sass/screen.scss */
+.about_us .wrap .progress_1 .progress_bar {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding-left: 1%;
+  padding-top: 70px;
+  flex: 2;
+  min-width: 320px;
+  line-height: 20px;
+}
+/* line 228, ../sass/screen.scss */
+.about_us .wrap .progress_1 .progress_bar h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+/* line 232, ../sass/screen.scss */
+.about_us .wrap .progress_1 .progress_bar .progress {
+  margin-bottom: 20px;
+  background-color: #E5E5E5;
+  height: 15px;
+}
+/* line 236, ../sass/screen.scss */
+.about_us .wrap .progress_1 .progress_bar .progress .progress-bar {
+  background-color: #FFC20E;
+  height: 15px;
+  line-height: 16px;
+  color: #323232;
+}
+/* line 244, ../sass/screen.scss */
+.about_us .wrap .progress_1 .what_can h2 {
+  font-family: "MyriadProRegular";
+  font-size: 1.8em;
+  line-height: 96px;
+  color: #323232;
+}
+/* line 250, ../sass/screen.scss */
+.about_us .wrap .progress_1 .what_can p {
+  font-size: 1.1em;
+  line-height: 25px;
+  color: #6B6B6B;
+}
+
+/**********ABOUT US**********/
+/**********SUBSCRIBE**********/
+/* line 261, ../sass/screen.scss */
+.newsletter {
+  background-color: #FFC20E;
+  min-height: 250px;
+  padding-top: 50px;
+}
+/* line 265, ../sass/screen.scss */
+.newsletter h1 {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: "MyriadProRegular";
+  color: #323232;
+}
+/* line 272, ../sass/screen.scss */
+.newsletter .form_subscribe {
+  margin-top: 40px;
+}
+/* line 274, ../sass/screen.scss */
+.newsletter .form_subscribe .form-inline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 278, ../sass/screen.scss */
+.newsletter .form_subscribe .form-inline .form-group {
+  opacity: 0.5;
+}
+/* line 280, ../sass/screen.scss */
+.newsletter .form_subscribe .form-inline .form-group .form-control {
+  padding: 15px 120px 15px 15px;
+  height: 50px;
+  border-radius: 0px;
+  border: none;
+  margin-top: 10px;
+}
+/* line 288, ../sass/screen.scss */
+.newsletter .form_subscribe .form-inline .btn {
+  padding: 10px 34px;
+  background-color: #323232;
+  color: #FFF;
+  font-size: 18px;
+  border: none;
+  border-radius: 0px;
+  transition: all 0.2s;
+  margin-top: 10px;
+}
+/* line 298, ../sass/screen.scss */
+.newsletter .form_subscribe .form-inline .btn:hover {
+  background-color: inherit;
+  box-shadow: inset 0px 0px 10px 0px #323232;
+  color: #323232;
+}
+
+/**********SUBSCRIBE**********/
+/**********OUR TEAM**********/
+/* line 310, ../sass/screen.scss */
+.our_team {
+  min-height: 695px;
+  background-color: #323232;
+  padding-top: 30px;
+}
+/* line 314, ../sass/screen.scss */
+.our_team h2 {
+  font-size: 2.3em;
+  color: #fff;
+  font-family: "MyriadProRegular";
+  text-align: center;
+  line-height: 95px;
+}
+/* line 321, ../sass/screen.scss */
+.our_team p {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 0 15%;
+  text-align: center;
+  line-height: 25px;
+}
+/* line 329, ../sass/screen.scss */
+.our_team .team_icon {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+/* line 335, ../sass/screen.scss */
+.our_team .team_icon .svg_masks_1 {
+  max-width: 226px;
+  margin: 1% 1%;
+}
+/* line 338, ../sass/screen.scss */
+.our_team .team_icon .svg_masks_1 .send_mail {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* line 341, ../sass/screen.scss */
+.our_team .team_icon .svg_masks_1 .send_mail a {
+  padding: 6px 28px;
+  color: #fff;
+  background-color: #FFC20E;
+  font-size: 1.7em;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+/* line 350, ../sass/screen.scss */
+.our_team .team_icon .svg_masks_1 .send_mail a:hover {
+  background: inherit;
+  color: #FFC20E;
+  box-shadow: inset 0 0 7px 1px #FFC20E;
+}
+/* line 356, ../sass/screen.scss */
+.our_team .team_icon .svg_masks_1 h3 {
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 18px;
+  text-align: center;
+  margin: 15px 0;
+}
+/* line 363, ../sass/screen.scss */
+.our_team .team_icon .svg_masks_1 p {
+  margin: 10px 0 30px 0;
+  line-height: 25px;
+}
+/* line 368, ../sass/screen.scss */
+.our_team .team_icon .svg_masks_1 img {
+  /*box-shadow: inset 0 0 0px 3px $bg_color;*/
+  border-radius: 120px;
+  border: 10px solid #FFC20E;
+  margin: -1px -1px -3px -1px;
+}
+
+/**********OUR TEAM**********/
+/**********PORTFOLIO**********/
+/* line 384, ../sass/screen.scss */
+.portfolio h1 {
+  color: #6B6B6B;
+  font-size: 2.2em;
+  text-align: center;
+  margin: 30px 0 0 0;
+  line-height: 96px;
+  font-family: "MyriadProRegular";
+}
+/* line 392, ../sass/screen.scss */
+.portfolio p {
+  color: #6B6B6B;
+  font-size: 1.1em;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 15%;
+}
+/* line 399, ../sass/screen.scss */
+.portfolio ul {
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+/* line 402, ../sass/screen.scss */
+.portfolio ul li {
+  display: inline-block;
+  margin: 0.7% 0.3%;
+}
+/* line 405, ../sass/screen.scss */
+.portfolio ul li .activ {
+  color: #323232;
+}
+/* line 408, ../sass/screen.scss */
+.portfolio ul li a {
+  display: block;
+  font-size: 1.2em;
+  border: 1px solid #FFC20E;
+  padding: 8px 20px;
+  border-radius: 4px;
+  color: #6B6B6B;
+  transition: all 0.2s;
+}
+/* line 416, ../sass/screen.scss */
+.portfolio ul li a:hover {
+  background-color: #FFC20E;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 424, ../sass/screen.scss */
+.portfolio .portfolio_bg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 428, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_a {
+  background-image: url(../img/opacity.png);
+  min-height: 110px;
+}
+/* line 431, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_a h3 {
+  color: #fff;
+  font-size: 1.4em;
+  margin: 0px 15px;
+  line-height: 42px;
+}
+/* line 437, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_a p {
+  color: #fff;
+  font-size: 1em;
+  text-align: left;
+  margin-left: 15px;
+  line-height: 25px;
+}
+/* line 445, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_1 {
+  width: 354px;
+  height: 346px;
+  background-image: url(../img/portfolio_bg_1.png);
+  margin: 26px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 454, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_2 {
+  width: 354px;
+  height: 346px;
+  background-image: url(../img/portfolio_bg_2.png);
+  margin: 26px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 463, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_3 {
+  width: 354px;
+  height: 346px;
+  background-image: url(../img/portfolio_bg_3.png);
+  margin: 26px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 472, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_4 {
+  width: 354px;
+  height: 346px;
+  background-image: url(../img/portfolio_bg_4.png);
+  margin: 26px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 481, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_5 {
+  width: 354px;
+  height: 346px;
+  background-image: url(../img/portfolio_bg_5.png);
+  margin: 26px 0px;
+}
+/* line 487, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_6 {
+  width: 354px;
+  height: 346px;
+  background-color: #323232;
+  background-image: url(../img/portfolio_bg_6.png);
+  margin: 26px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 497, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_7 {
+  width: 354px;
+  height: 346px;
+  background-image: url(../img/portfolio_bg_7.png);
+  margin: 26px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 506, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_8 {
+  width: 354px;
+  height: 346px;
+  background-image: url(../img/portfolio_bg_8.png);
+  margin: 26px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 515, ../sass/screen.scss */
+.portfolio .portfolio_bg .bg_title_9 {
+  width: 354px;
+  height: 346px;
+  background-image: url(../img/portfolio_bg_9.png);
+  margin: 26px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/**********PORTFOLIO**********/
+/**********FOOTER**********/
+/* line 529, ../sass/screen.scss */
+.contact_submit {
+  min-height: 1015px;
+  margin-top: 45px;
+  background-image: url(../img/footer_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 20px;
+}
+/* line 536, ../sass/screen.scss */
+.contact_submit h1 {
+  font-family: "MyriadProRegular";
+  font-size: 2.2em;
+  color: #fff;
+  line-height: 96px;
+}
+/* line 542, ../sass/screen.scss */
+.contact_submit p {
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 25px;
+  margin: 0 15%;
+  margin-bottom: 50px;
+}
+/* line 549, ../sass/screen.scss */
+.contact_submit .form_group {
+  margin: 1% 0%;
+  max-width: 550px;
+}
+/* line 555, ../sass/screen.scss */
+.contact_submit .form-control {
+  font-size: 1.1em;
+  padding: 19px 12px;
+}
+/* line 559, ../sass/screen.scss */
+.contact_submit .form-control_1 {
+  max-width: 550px;
+  margin-bottom: 40px;
+  padding: 6px 12px;
+}
+/* line 564, ../sass/screen.scss */
+.contact_submit .btn-default {
+  background-color: #FFC20E;
+  font-family: "MyriadProRegular";
+  font-size: 1.5em;
+  color: #fff;
+  padding: 8px 45px;
+  border: none;
+  border-radius: 0;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+/* line 574, ../sass/screen.scss */
+.contact_submit .btn-default:hover {
+  background-color: inherit;
+  color: #323232;
+  box-shadow: inset 0 0 7px 1px #323232;
+}
+/* line 580, ../sass/screen.scss */
+.contact_submit .nav_bottom {
+  margin-top: 200px;
+}
+/* line 582, ../sass/screen.scss */
+.contact_submit .nav_bottom .nav_bottom_1 {
+  display: inline-block;
+}
+/* line 584, ../sass/screen.scss */
+.contact_submit .nav_bottom .nav_bottom_1 a {
+  color: #fff;
+  display: block;
+  font-size: 1em;
+}
+/* line 590, ../sass/screen.scss */
+.contact_submit .nav_bottom .two_points {
+  color: #fff;
+  font-size: 1.3em;
+  margin: 0 1.2% 0 2%;
+}
+/* line 596, ../sass/screen.scss */
+.contact_submit h3 {
+  color: #fff;
+  font-size: 1em;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+/**********FOOTER**********/

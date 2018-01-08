@@ -1,0 +1,609 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/*body {
+	overflow: hidden;
+}*/
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CocaColaRegular";
+    src: url("../fonts/CocaColaRegular/CocaColaRegular.eot");
+    src: url("../fonts/CocaColaRegular/CocaColaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CocaColaRegular/CocaColaRegular.woff") format("woff"),
+    url("../fonts/CocaColaRegular/CocaColaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "TimesNewRomanRegular";
+    src: url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.eot");
+    src: url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.woff") format("woff"),
+    url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$main_font: "TimesNewRomanRegular";
+
+$main_color: #323232;
+
+$bg_color: #FFC20E;
+
+.wrap {
+	max-width: 1170px;
+	min-width: 320px;
+	margin: 0 auto;	
+}
+
+/**********HEADER**********/
+header {
+	background-image: url('../img/bg.jpg');
+
+	height: 720px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.head {
+	background-image: url(../img/bg-top.png);
+	background-repeat: repeat-x;
+}
+
+.top_header {
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+	flex-flow: row nowrap;
+	align-content: stretch;
+	align-items: center;
+	height: 73px;
+	justify-content: space-between;
+		h1 {
+			color: #fff;
+			font-family: $main_font;
+			font-size: 24px;				
+				a {
+					font-family: $main_font;
+					color: #fff;
+					display: block;
+				}
+
+		}
+
+		.menu a {
+			color: #fff;
+			display: block;
+			transition: all 0.2s;
+			padding: 7px 18px;				
+		}
+		.menu a:hover {			
+			text-decoration: none;
+			color: #000;
+		}
+		.menu a.active_1 {
+			background: #323232;
+			padding: 7px 18px;							
+		}
+}
+.top_menu {
+	.drop_menu {
+		display: none;
+		font-size: 24px;
+		color: #fff;
+
+			.drop_menu_1 {
+				background: $main_color;
+				display: none;
+				position: absolute;
+				width: 30px;
+				right: 102px;
+
+					li {
+						background: $main_color;
+						width: 120px;
+					a {
+						display: block;	
+						padding: 5px 15px;											
+					}
+					}
+					
+
+			}
+	}
+	ul {
+		margin: 0;
+		padding: 0;		
+			li {
+				display: inline-block;
+					a {
+						display: inline-block;
+						margin: 0px 0px;
+						color: #fff;
+					}
+			}
+	}
+}
+
+.nice_meet {	
+	height: 647px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+		.present {
+			padding-left: 11%;
+			text-align: center;
+				h1 {
+					font-family: "CocaColaRegular";
+					font-size: 5em;
+					letter-spacing: 2px;					
+					margin-top: -150px;					
+					color: $main_color;									
+				}
+				p {
+					font-size: 24px;
+					margin-top: 10px;
+					color: $main_color;
+				}
+		}
+		.touch {
+			margin-top: 20px; 
+			margin-left: 11%;	
+				.btn-warning {
+					background-color: $bg_color;
+					color: #000;
+					border: none;
+					transition: all 0.5s;
+					padding: 8px 33px;
+					border-radius: 0px;	
+					font-size: 20px;
+					color: $main_color;
+								
+				}
+
+		}
+		.touch:hover .btn-warning {
+			background-color: inherit;
+			border: none;			
+			box-shadow: inset 0px 0px 10px 0px  #000;
+			color: $bg_color;
+		}
+}
+/**********HEADER**********/
+
+/**********ABOUT US**********/
+.about_us {
+	min-height: 480px;
+		.wrap {
+			display: flex;
+			flex-direction: column;
+			padding-top: 30px; 
+				.about h1 {
+					font-family: "MyriadProRegular";
+					font-size: 2.5em;
+					line-height: 96px;
+					text-align: center;
+					color: $main_color;
+				}
+				.about p {
+					font-size: 1.1em;
+					text-align: center;
+					line-height: 25px;
+					margin: 0px 15%;
+					color: #6B6B6B;
+				}
+				.progress_1 {
+					display: flex;
+					flex-wrap: wrap;					
+						.what_can {
+							flex: 1;
+							min-width: 320px;
+						}
+						.progress_bar {
+							display: flex;
+							flex-direction: column;
+							align-content: space-between;
+							padding-left: 1%;
+							padding-top: 70px;
+							flex: 2;
+							min-width: 320px;
+							line-height: 20px;
+								h3 {
+									font-size: 1em;
+									margin-bottom: 10px;									
+								}
+								.progress {
+									margin-bottom: 20px;
+									background-color: #E5E5E5;
+									height: 15px;
+										.progress-bar {
+									 		background-color: $bg_color;
+									 		height: 15px;
+									 		line-height: 16px;
+									 		color: $main_color;
+									 }
+								}							
+						}
+						.what_can h2 {
+							font-family: "MyriadProRegular";
+							font-size: 1.8em;
+							line-height: 96px;
+							color: $main_color;							
+						}
+						.what_can p {
+							font-size: 1.1em;
+							line-height: 25px;
+							color: #6B6B6B;
+						}
+				}
+		} 
+}
+/**********ABOUT US**********/
+
+/**********SUBSCRIBE**********/
+	.newsletter {
+		background-color: $bg_color;
+		min-height: 250px;
+		padding-top: 50px;		
+			h1 {
+				text-align: center;
+				font-size: 2.4em;
+				font-family: "MyriadProRegular";
+				color: $main_color;
+
+			}
+			.form_subscribe {				
+				margin-top: 40px;
+					.form-inline {
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+							.form-group {
+								opacity: 0.5;
+									.form-control {
+										padding: 15px 120px 15px 15px;
+										height: 50px;
+										border-radius: 0px;
+										border:none;
+										margin-top: 10px;
+									}
+							}						
+							.btn {
+								padding: 10px 34px;								
+								background-color: $main_color;
+								color: #FFF;
+								font-size: 18px;
+								border: none;
+								border-radius: 0px;
+								transition: all 0.2s;
+								margin-top: 10px; 																	
+							}
+							.btn:hover {
+								background-color: inherit;
+								box-shadow: inset 0px 0px 10px 0px  $main_color;
+								color: $main_color;
+							}
+
+					}
+			}
+	}
+/**********SUBSCRIBE**********/
+
+/**********OUR TEAM**********/
+.our_team {
+	min-height: 695px;
+	background-color: $main_color;
+	padding-top: 30px;
+		h2 {
+			font-size: 2.3em;
+			color: #fff;
+			font-family: "MyriadProRegular";
+			text-align: center;
+			line-height: 95px;
+		}
+		p {
+			color: #fff;
+			font-size: 1.1em;
+			margin: 0 15%;
+			text-align: center;
+			line-height: 25px;
+		}
+		
+		.team_icon {
+			min-height: 100px;
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			padding-top: 30px;
+				.svg_masks_1 {
+					max-width: 226px;
+					margin: 1% 1%;
+						.send_mail {
+							text-align: center;
+							margin-bottom: 40px; 
+								a {
+									padding: 6px 28px;
+									color: #fff;
+									background-color: $bg_color;
+									font-size: 1.7em;
+									border-radius: 4px;
+									transition: all 0.2s;
+
+								}
+								a:hover {
+									background: inherit;
+									color: $bg_color;
+									box-shadow: inset 0 0 7px 1px $bg_color;
+								}
+						}											
+						h3 {
+							color: #fff;
+							font-size: 1.5em;
+							line-height: 18px;
+							text-align: center;
+							margin: 15px 0;
+						} 
+						p {
+							margin: 10px 0 30px 0;
+							line-height: 25px;
+
+						}	
+						img {
+					/*box-shadow: inset 0 0 0px 3px $bg_color;*/
+					border-radius: 120px;
+					border: 10px solid $bg_color;					
+					margin: -1px -1px -3px -1px;
+
+					}	
+				}
+						
+		}
+}
+/**********OUR TEAM**********/
+
+
+/**********PORTFOLIO**********/
+.portfolio {	
+	h1 {
+		color: #6B6B6B;
+		font-size: 2.2em;
+		text-align: center;
+		margin: 30px 0 0 0;
+		line-height: 96px;
+		font-family: "MyriadProRegular";
+	}
+	p {
+		color: #6B6B6B;
+		font-size: 1.1em;
+		line-height: 25px;
+		text-align: center;
+		margin: 0 15%;
+	}
+	ul {
+		text-align: center;
+		margin: 50px 0 50px 0;
+			li {
+				display: inline-block;
+				margin: 0.7% 0.3%;
+					.activ {
+						color: $main_color;
+					}
+					a {
+					display: block;
+					font-size: 1.2em;
+					border: 1px solid $bg_color;
+					padding: 8px 20px;					
+					border-radius: 4px;	
+					color: #6B6B6B;
+					transition: all 0.2s;
+					&:hover {
+						background-color: $bg_color;
+						color: #fff;
+						text-decoration: none;
+					}										
+					}				
+				}
+		}
+	.portfolio_bg {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+			.bg_title_a {
+				background-image: url(../img/opacity.png);
+				min-height: 110px;
+				h3 {
+					color: #fff;
+					font-size: 1.4em;					
+					margin: 0px 15px;
+					line-height: 42px;
+				}
+				p {
+					color: #fff;
+					font-size: 1em;
+					text-align: left;
+					margin-left: 15px;
+					line-height: 25px;
+				}
+			}
+			.bg_title_1 {
+				width: 354px;
+				height: 346px;
+				background-image: url(../img/portfolio_bg_1.png);
+				margin: 26px 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;				
+			}
+			.bg_title_2 {
+				width: 354px;
+				height: 346px;
+				background-image: url(../img/portfolio_bg_2.png);
+				margin: 26px 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;				
+			}
+			.bg_title_3 {
+				width: 354px;
+				height: 346px;
+				background-image: url(../img/portfolio_bg_3.png);
+				margin: 26px 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;				
+			}
+			.bg_title_4 {
+				width: 354px;
+				height: 346px;
+				background-image: url(../img/portfolio_bg_4.png);
+				margin: 26px 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;				
+			}
+			.bg_title_5 {
+				width: 354px;
+				height: 346px;
+				background-image: url(../img/portfolio_bg_5.png);
+				margin: 26px 0px;				
+			}
+			.bg_title_6 {
+				width: 354px;
+				height: 346px;
+				background-color: $main_color;
+				background-image: url(../img/portfolio_bg_6.png);
+				margin: 26px 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;				
+			}
+			.bg_title_7 {
+				width: 354px;
+				height: 346px;				
+				background-image: url(../img/portfolio_bg_7.png);
+				margin: 26px 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;				
+			}
+			.bg_title_8 {
+				width: 354px;
+				height: 346px;				
+				background-image: url(../img/portfolio_bg_8.png);
+				margin: 26px 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;				
+			}
+			.bg_title_9 {
+				width: 354px;
+				height: 346px;				
+				background-image: url(../img/portfolio_bg_9.png);
+				margin: 26px 0px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;				
+			}
+	}	
+}
+/**********PORTFOLIO**********/
+
+/**********FOOTER**********/
+.contact_submit {
+	min-height: 1015px;
+	margin-top: 45px;
+	background-image: url(../img/footer_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 20px;
+		h1 {
+			font-family: "MyriadProRegular";
+			font-size: 2.2em;
+			color: #fff;
+			line-height: 96px;
+		}
+		p {
+			color: #fff;
+			font-size: 1.1em;
+			line-height: 25px;
+			margin: 0 15%;
+			margin-bottom: 50px;
+		}
+		.form_group {
+			margin: 1% 0%; 
+			max-width: 550px;
+
+		}
+		
+		.form-control {
+			font-size: 1.1em;
+			padding: 19px 12px;
+		}
+		.form-control_1 {
+			max-width: 550px;
+			margin-bottom: 40px;
+			padding: 6px 12px;
+		}
+		.btn-default {
+			background-color: $bg_color;
+			font-family: "MyriadProRegular";
+			font-size: 1.5em;
+			color: #fff;
+			padding: 8px 45px; 
+			border: none;
+			border-radius: 0;
+			margin-top: 5px;
+			transition: all 0.3s;
+				&:hover {
+					background-color: inherit;
+					color: $main_color;
+					box-shadow: inset 0 0 7px 1px $main_color;
+				}  
+		}
+		.nav_bottom {
+			margin-top: 200px;
+				.nav_bottom_1 {
+					display: inline-block;					
+						a {
+							color: #fff;
+							display: block;							
+							font-size: 1em;
+						}
+				}
+				.two_points {
+					color: #fff;
+					font-size: 1.3em;
+					margin: 0 1.2% 0 2%;
+				}				
+		}
+		h3 {
+					color: #fff;
+					font-size: 1em;
+					line-height: 24px;
+					margin-top: 20px;
+				}
+}
+/**********FOOTER**********/
+
+
+
+
+	
+

@@ -1,0 +1,57 @@
+@media (min-width: 1063px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1062px) {
+    .portfolio .portfolio_bg {  
+  justify-content: space-around;
+}
+}
+
+
+@media (min-width: 550px) and (max-width: 768px) {
+    .portfolio .portfolio_bg {  
+  justify-content: space-around;
+}
+
+.top_menu .menu {
+  display: none;
+}
+
+.top_menu .drop_menu {
+    display: block;
+
+}
+
+.top_menu {
+    margin-right: 15px;
+}
+
+.top_menu .drop_menu:hover .drop_menu_1 {
+    display: block;
+}
+}
+
+@media (max-width: 549px) {
+    .portfolio .portfolio_bg {  
+  justify-content: space-around;
+}
+
+.top_menu .menu {
+  display: none;
+}
+
+.top_menu .drop_menu {
+    display: block;
+}
+
+
+
+.top_menu {
+    margin-right: 15px;
+}
+
+.top_menu .drop_menu:hover .drop_menu_1 {
+    display: block;
+}
+}
